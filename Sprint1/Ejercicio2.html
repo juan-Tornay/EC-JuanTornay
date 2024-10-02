@@ -1,29 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- </head>
- <body>
-
- <form>
-    <label for="Ancho">Ancho</label>
-    <input type="number" id="ancho" name="ancho">
- 
-    <label for="Altura">Altura</label>
-    <input type="number" id="altura" name="altura">
-
-    <button type="button" onclick="obtenerValor()">Obtener valor</button>
-
-
-</form>  
-    
    
+</head>
+<body>
+    <h1>La Calculadora del Area de un rectangulo</h1>
+    <label for="ancho">Ancho:</label>
+    <input type="number" id="ancho" placeholder="Introduce el ancho">
+    <br>
+    <label for="alto">Alto:</label>
+    <input type="number" id="alto" placeholder="Introduce el alto">
+    <br><br>
+    <button onclick="calcularArea()">Calcular Área</button>
+    <p id="salida"></p>
 
-    
-    
-    
-    <script src="Ejercicio2.js"></script> 
+    <script src="Ejercicio2.js"></script>
 </body>
 </html>
+
