@@ -69,3 +69,48 @@ Se utilizarán eventos en JavaScript para gestionar los cambios de estilo de los
 Se realizarán pruebas para verificar que los estilos cambian correctamente al pasar el ratón sobre los elementos y se restauran al salir.
 
 ![gif](Ejercicio4.gif)
+
+
+
+## Ejercicio 5: Detección de Clics y Generación de XPath
+
+### Análisis del problema
+El objetivo de este ejercicio es crear una página web que permita detectar clics en cualquier elemento del DOM y generar el XPath único del elemento clickeado. Este XPath debe mostrarse al usuario ya sea en un cuadro de alerta o en una sección específica de la página. El XPath es una cadena que indica la ruta exacta del elemento en el árbol DOM de la página, lo que lo hace único. La solución debe ser capaz de identificar con precisión el elemento clickeado y generar un XPath que lo describa sin ambigüedad.
+
+### Diseño de la propuesta de solución del problema
+- **Esquema gráfico**: Se sugiere el uso de un diagrama de flujo para visualizar cómo el evento de clic es detectado en el documento y cómo se recorre el DOM para generar el XPath.
+  
+#### Descripción de la solución:
+1. **Detección de clics**:
+   - Se añadirá un detector de eventos (`addEventListener`) al documento completo. Este detector capturará cualquier clic realizado en la página.
+   - Usaremos `event.target` para identificar el elemento exacto donde ocurrió el clic.
+   
+2. **Generación del XPath**:
+   - Se utilizará un recorrido ascendente del árbol DOM, comenzando desde el elemento clickeado hasta el nodo raíz (`document`), construyendo el XPath paso a paso.
+   
+3. **Salida del XPath**:
+   - Una vez generado, el XPath se mostrará al usuario mediante un cuadro de alerta o en una sección específica dentro de la página, utilizando el DOM para insertar el resultado dinámicamente.
+
+### Implementación del diseño propuesto
+La implementación se llevará a cabo utilizando JavaScript para detectar los clics y generar el XPath correspondiente a cada elemento. Se utilizarán funciones para:
+- Detectar los clics en cualquier parte del documento.
+- Identificar el elemento clickeado.
+- Generar la cadena XPath que representa el elemento dentro del DOM.
+- Mostrar el XPath generado en un cuadro de alerta o en una sección de la página.
+
+### Pruebas de la resolución del problema
+Para verificar la correcta implementación de la funcionalidad, se realizarán las siguientes pruebas:
+
+1. **Prueba de Detección de Clics**:
+   - Hacer clic en diversos elementos de la página y comprobar que el evento se detecta correctamente, y que `event.target` identifica el elemento adecuado.
+   
+2. **Prueba de Generación de XPath**:
+   - Comparar el XPath generado con el XPath mostrado en herramientas como Chrome DevTools para asegurarse de que coinciden.
+   
+3. **Prueba de Salida**:
+   - Validar que el XPath generado se muestra en el cuadro de alerta o en la sección específica de la página, y que este XPath es el correcto para cada elemento clickeado.
+
+### Video GIF
+Incluir un GIF donde se muestre la interacción con la página. El usuario debe hacer clic en varios elementos de la página, y el GIF debe demostrar cómo se genera el XPath correcto y se muestra en pantalla.
+
+
