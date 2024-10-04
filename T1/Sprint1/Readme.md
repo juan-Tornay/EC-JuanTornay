@@ -3,7 +3,7 @@
 
 Este repositorio contiene cuatro ejercicios de desarrollo web. A continuación, se presenta un análisis detallado, el diseño de la solución, la implementación y las pruebas correspondientes para cada ejercicio.
 
-[gif](Ejercicio1.gif);
+![gif](Ejercicio1.gif)
 ## Ejercicio 1: Cambio de Color con Botón
 
 ### Análisis del problema
@@ -19,7 +19,7 @@ Se implementará la solución utilizando HTML y JavaScript para cambiar el color
 Se realizarán pruebas para verificar que el color de fondo cambia de manera aleatoria al hacer clic en el botón.
 
 ---
-[gif](Ejercicio2.gif);
+![gif](Ejercicio2.gif)
 ## Ejercicio 2: Calculadora de Área
 
 ### Análisis del problema
@@ -36,7 +36,7 @@ Se probarán diferentes valores de ancho y alto para asegurar que el área se ca
 
 ---
 
-[gif](Ejercicio3.gif);
+![gif](Ejercicio3.gif)
 ## Ejercicio 3: Listado Dinámico
 
 ### Análisis del problema
@@ -53,7 +53,7 @@ Se verificarán que los ítems se añaden correctamente a la lista y que no se p
 
 ---
 
-[gif](Ejercicio4.gif);   
+![gif](Ejercicio4.gif)
 ## Ejercicio 4: Hover y Estilo Dinámico
 
 ### Análisis del problema
