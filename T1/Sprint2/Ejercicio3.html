@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Color Favorito</title>
+</head>
+<body>
+    <h1>¿Cuál es tu color favorito?</h1>
+    <form id="encuestaForm">
+        <label>
+            <input type="radio" name="color" value="Rojo"> Rojo
+        </label><br>
+        <label>
+            <input type="radio" name="color" value="Verde"> Verde
+        </label><br>
+        <label>
+            <input type="radio" name="color" value="Azul"> Azul
+        </label><br>
+        <label>
+            <input type="radio" name="color" value="Amarillo"> Amarillo
+        </label><br>
+        <button type="button" id="enviarBtn">Enviar</button>
+    </form>
+
+    <h2>Resultados:</h2>
+    <div id="grafico">
+        <div id="barraRojo" style="background-color: red; width: 20px; color: black;">Rojo: 0</div>
+        <div id="barraVerde" style="background-color: green; width: 20px; color: black;">Verde: 0</div>
+        <div id="barraAzul" style="background-color: blue; width: 20px; color: black;">Azul: 0</div>
+        <div id="barraAmarillo" style="background-color: yellow; width: 20px; color: black;">Amarillo: 0</div>
+    </div>
+
+    <script src="Ejercicio3.js"></script>
+</body>
+</html>

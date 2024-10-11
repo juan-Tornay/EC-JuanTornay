@@ -4,7 +4,7 @@
 Este repositorio contiene cuatro ejercicios de desarrollo web. A continuación, se presenta un análisis detallado, el diseño de la solución, la implementación y las pruebas correspondientes para cada ejercicio.
 
 
-## Ejercicio 1: Cambio de Color con Botón
+## Ejercicio 1: Contrarreloj
 
 ### Análisis del problema
 Se debe crear una página web que contenga un botón etiquetado "Cambiar color". Al hacer clic en este botón, el color de fondo de la página debe cambiar a un color generado aleatoriamente. Este problema se resolverá utilizando el método `Math.random()` para generar valores RGB aleatorios.
@@ -20,7 +20,7 @@ Se realizarán pruebas para verificar que el color de fondo cambia de manera ale
 ![gif](Ejercicio1.gif)
 ---
 
-## Ejercicio 2: Calculadora de Área
+## Ejercicio 2: Calculadora básica
 
 ### Análisis del problema
 Se requiere diseñar una página web con dos campos de entrada para introducir el ancho y el alto de un rectángulo. Al hacer clic en un botón etiquetado "Calcular Área", el área del rectángulo se debe calcular y mostrar en un párrafo en la página.
@@ -37,7 +37,7 @@ Se probarán diferentes valores de ancho y alto para asegurar que el área se ca
 ---
 
 
-## Ejercicio 3: Listado Dinámico
+## Ejercicio 3: Encuesta con gráficos de resultados
 
 ### Análisis del problema
 Se necesita una página con un campo de entrada y un botón etiquetado "Añadir a la lista". Al hacer clic en el botón, el contenido del campo debe añadirse como un nuevo ítem (`<li>`) a una lista vacía (`<ul>`).
@@ -54,7 +54,7 @@ Se verificarán que los ítems se añaden correctamente a la lista y que no se p
 ---
 
 
-## Ejercicio 4: Hover y Estilo Dinámico
+## Ejercicio 4: Cronómetro con controles de inicio , pausa y reinicio
 
 ### Análisis del problema
 El objetivo es crear una página con varios elementos `div`. Al pasar el ratón sobre un `div`, su color de fondo debe cambiar a azul y el texto a blanco. Al mover el ratón fuera del `div`, los estilos originales deben restaurarse.
