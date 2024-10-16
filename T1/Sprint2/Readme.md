@@ -17,7 +17,7 @@ Se implementará la solución utilizando HTML y JavaScript para cambiar el color
 
 ### Pruebas de la resolución del problema
 Se realizarán pruebas para verificar que el color de fondo cambia de manera aleatoria al hacer clic en el botón.
-![gif](Ejercicio1.gif)
+![gif](Temporizador.gif)
 ---
 
 ## Ejercicio 2: Calculadora básica
@@ -33,7 +33,12 @@ Se utilizarán formularios HTML y un script JavaScript para realizar los cálcul
 
 ### Pruebas de la resolución del problema
 Se probarán diferentes valores de ancho y alto para asegurar que el área se calcula y se muestra correctamente.
-![gif](Ejercicio2.gif)
+![gif](Suma%20(online-video-cutter.com).gif)
+![gif](Resta.gif)
+![gif](Multiplicacion%20(online-video-cutter.com).gif)
+![gif](Division%20(online-video-cutter.com)%20(1).gif)
+
+
 ---
 
 
@@ -50,7 +55,11 @@ Se utilizará JavaScript para crear y añadir elementos a la lista en el DOM.
 
 ### Pruebas de la resolución del problema
 Se verificarán que los ítems se añaden correctamente a la lista y que no se permiten entradas vacías.
-![gif](Ejercicio3.gif)
+![gif](Rojo.gif)
+![gif](Verde.gif)
+![gif](Azul.gif)
+![gif](Amarillo.gif)
+![gif](Colors.gif)
 ---
 
 
@@ -68,49 +77,37 @@ Se utilizarán eventos en JavaScript para gestionar los cambios de estilo de los
 ### Pruebas de la resolución del problema
 Se realizarán pruebas para verificar que los estilos cambian correctamente al pasar el ratón sobre los elementos y se restauran al salir.
 
-![gif](Ejercicio4.gif)
+![gif](PrimerosCinco.gif)
+![gif](UltimosCinco.gif)
+![gif](Reinicio.gif)
 
 
 
-## Ejercicio 5: Detección de Clics y Generación de XPath
+## Ejercicio 5: Juego de memoria con cartas
 
-### Análisis del problema
-El objetivo de este ejercicio es crear una página web que permita detectar clics en cualquier elemento del DOM y generar el XPath único del elemento clickeado. Este XPath debe mostrarse al usuario ya sea en un cuadro de alerta o en una sección específica de la página. El XPath es una cadena que indica la ruta exacta del elemento en el árbol DOM de la página, lo que lo hace único. La solución debe ser capaz de identificar con precisión el elemento clickeado y generar un XPath que lo describa sin ambigüedad.
+### Descripción
+El objetivo es crear un juego de memoria donde el usuario debe hacer clic en dos cartas para ver si coinciden. Si coinciden, permanecen boca arriba; si no, se voltean después de un breve intervalo. El objetivo es encontrar todas las parejas.
 
 ### Diseño de la propuesta de solución del problema
-- **Esquema gráfico**: Se sugiere el uso de un diagrama de flujo para visualizar cómo el evento de clic es detectado en el documento y cómo se recorre el DOM para generar el XPath.
+- **HTML**: Crear una cuadrícula de cartas (pueden ser imágenes o texto como números o letras).
+- **JS**: Detectar el evento `click` en cada carta. Implementar lógica condicional para comparar cartas seleccionadas y usar `setTimeout` para manejar el volteo de cartas que no coinciden.
+- **Manipulación del DOM**: Mostrar/ocultar cartas y actualizar el estado del juego dinámicamente.
   
-#### Descripción de la solución:
-1. **Detección de clics**:
-   - Se añadirá un detector de eventos (`addEventListener`) al documento completo. Este detector capturará cualquier clic realizado en la página.
-   - Usaremos `event.target` para identificar el elemento exacto donde ocurrió el clic.
-   
-2. **Generación del XPath**:
-   - Se utilizará un recorrido ascendente del árbol DOM, comenzando desde el elemento clickeado hasta el nodo raíz (`document`), construyendo el XPath paso a paso.
-   
-3. **Salida del XPath**:
-   - Una vez generado, el XPath se mostrará al usuario mediante un cuadro de alerta o en una sección específica dentro de la página, utilizando el DOM para insertar el resultado dinámicamente.
-
 ### Implementación del diseño propuesto
-La implementación se llevará a cabo utilizando JavaScript para detectar los clics y generar el XPath correspondiente a cada elemento. Se utilizarán funciones para:
-- Detectar los clics en cualquier parte del documento.
-- Identificar el elemento clickeado.
-- Generar la cadena XPath que representa el elemento dentro del DOM.
-- Mostrar el XPath generado en un cuadro de alerta o en una sección de la página.
+Se utilizarán eventos de clic y métodos de temporización (`setTimeout`) para gestionar el volteo de cartas. La lógica debe manejar la comparación de cartas seleccionadas, asegurando que el juego detecte cuando todas las parejas han sido encontradas, y mostrando un mensaje de finalización. El juego debe reiniciarse correctamente, barajando las cartas.
 
 ### Pruebas de la resolución del problema
-Para verificar la correcta implementación de la funcionalidad, se realizarán las siguientes pruebas:
+Se realizarán las siguientes pruebas para verificar el funcionamiento del juego:
+1. Verificar que las cartas se voltean al hacer clic y permanecen boca arriba si coinciden.
+2. Comprobar que dos cartas no coincidentes se voltean nuevamente tras un breve intervalo.
+3. Probar que el juego detecta cuando se han encontrado todas las parejas y muestra un mensaje de finalización.
+4. Verificar que el juego puede reiniciarse correctamente, barajando las cartas de nuevo.
+Incorrecto
+![gif](Incorrecto.gif)
+Correcto
+![gif](Correcto.gif)
+Botón de reiniciar
+![gif](Reinicio.gif)
 
-1. **Prueba de Detección de Clics**:
-   - Hacer clic en diversos elementos de la página y comprobar que el evento se detecta correctamente, y que `event.target` identifica el elemento adecuado.
-   
-2. **Prueba de Generación de XPath**:
-   - Comparar el XPath generado con el XPath mostrado en herramientas como Chrome DevTools para asegurarse de que coinciden.
-   
-3. **Prueba de Salida**:
-   - Validar que el XPath generado se muestra en el cuadro de alerta o en la sección específica de la página, y que este XPath es el correcto para cada elemento clickeado.
-
-### Video GIF
-Incluir un GIF donde se muestre la interacción con la página. El usuario debe hacer clic en varios elementos de la página, y el GIF debe demostrar cómo se genera el XPath correcto y se muestra en pantalla.
 
 
