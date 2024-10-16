@@ -17,6 +17,7 @@ Se implementará la solución utilizando HTML y JavaScript para cambiar el color
 
 ### Pruebas de la resolución del problema
 Se realizarán pruebas para verificar que el color de fondo cambia de manera aleatoria al hacer clic en el botón.
+
 ![gif](Temporizador.gif)
 ---
 
@@ -33,9 +34,13 @@ Se utilizarán formularios HTML y un script JavaScript para realizar los cálcul
 
 ### Pruebas de la resolución del problema
 Se probarán diferentes valores de ancho y alto para asegurar que el área se calcula y se muestra correctamente.
+Suma
 ![gif](Suma%20(online-video-cutter.com).gif)
+Resta
 ![gif](Resta.gif)
+Multiplicación
 ![gif](Multiplicacion%20(online-video-cutter.com).gif)
+División
 ![gif](Division%20(online-video-cutter.com)%20(1).gif)
 
 
@@ -55,10 +60,15 @@ Se utilizará JavaScript para crear y añadir elementos a la lista en el DOM.
 
 ### Pruebas de la resolución del problema
 Se verificarán que los ítems se añaden correctamente a la lista y que no se permiten entradas vacías.
+Rojo
 ![gif](Rojo.gif)
+Verde
 ![gif](Verde.gif)
+Azul
 ![gif](Azul.gif)
+Amarillo
 ![gif](Amarillo.gif)
+Todos los colores se qudan fijos
 ![gif](Colors.gif)
 ---
 
@@ -76,9 +86,11 @@ Se utilizarán eventos en JavaScript para gestionar los cambios de estilo de los
 
 ### Pruebas de la resolución del problema
 Se realizarán pruebas para verificar que los estilos cambian correctamente al pasar el ratón sobre los elementos y se restauran al salir.
-
+Primeros cinco segundos
 ![gif](PrimerosCinco.gif)
+Ultimos cinco segundos
 ![gif](UltimosCinco.gif)
+Boton de reinicio
 ![gif](Reinicio.gif)
 
 
