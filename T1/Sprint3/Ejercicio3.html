@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Ejercicio3.css"> <!-- Enlace a tu CSS -->
+   
+    <title>Gestión de Miembros</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Miembros de la Guild</h1>
+        <button id="addMemberBtn">Add New Member</button>
+        <table id="membersTable">
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Username</th>
+                    <th>Level</th>
+                    <th>Item Level</th>
+                    <th>Character Role</th>
+                    <th>Guild Role</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="membersBody">
+                <!-- Miembros se insertarán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <div id="memberModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Añadir Miembro</h2>
+            <form id="memberForm">
+                <label for="user_id">User ID:</label>
+                <input type="text" id="user_id" required>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+
+                <label for="level">Level:</label>
+                <input type="number" id="level" required>
+
+                <label for="ilvl">Item Level:</label>
+                <input type="number" id="ilvl" required>
+
+                <label for="character_role">Character Role:</label>
+                <select id="character_role" required>
+                    <option value="TANK">TANK</option>
+                    <option value="HEALER">HEALER</option>
+                    <option value="DAMAGE">DAMAGE</option>
+                    <option value="SUPPORT">SUPPORT</option>
+                </select>
+
+                <label for="guild_role">Guild Role:</label>
+                <select id="guild_role" required>
+                    <option value="LIDER">LIDER</option>
+                    <option value="GERENTE SENIOR">GERENTE SENIOR</option>
+                    <option value="GERENTE">GERENTE</option>
+                    <option value="GERENTE A2">GERENTE A2</option>
+                    <option value="ALPHA 2">ALPHA 2</option>
+                    <option value="MEMBER">MEMBER</option>
+                </select>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <button type="submit" id="saveBtn">Add Member</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Ejercicio3.js"></script> <!-- Enlace a tu JavaScript -->
+</body>
+</html>
