@@ -6,6 +6,8 @@ const modalTitle = document.getElementById('modalTitle');
 const memberForm = document.getElementById('memberForm');
 let currentEditingIndex = null;
 
+const API_URL = "http://localhost:3000/guildmembers"; // URL de la API
+
 // Función para renderizar miembros en la tabla
 function renderMembers() {
     membersBody.innerHTML = '';
@@ -20,7 +22,7 @@ function renderMembers() {
                 <td>${member.guild_role}</td>
                 <td>
                     <button onclick="editMember(${index})">Edit</button>
-                    <button onclick="deleteMember(${index})">Delete</button>
+                    <button onclick="deleteMember('${member.user_id}')">Delete</button>
                 </td>
             </tr>
         `;
@@ -46,7 +48,7 @@ memberForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const userId = document.getElementById('user_id').value;
 
-    // Validar si el user_id ya existe
+    // Validar si el user_id ya existe, exceptuando el caso de edición
     if (members.some(member => member.user_id === userId && currentEditingIndex !== members.indexOf(member))) {
         alert('El user_id ya existe.');
         return;
@@ -62,14 +64,35 @@ memberForm.addEventListener('submit', (event) => {
         email: document.getElementById('email').value,
     };
 
-    if (currentEditingIndex !== null) {
-        members[currentEditingIndex] = newMember; // Actualiza miembro existente
-    } else {
-        members.push(newMember); // Añade nuevo miembro
-    }
+    // Si está editando un miembro, se debe hacer una solicitud PUT, de lo contrario, POST
+    const method = currentEditingIndex !== null ? 'PUT' : 'POST';
+    const url = currentEditingIndex !== null ? `${API_URL}/${userId}` : API_URL;
 
-    renderMembers();
-    memberModal.style.display = 'none'; // Cierra el modal
+    fetch(url, {
+        method: method,
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newMember),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Error en la solicitud de la API');
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (currentEditingIndex !== null) {
+            members[currentEditingIndex] = newMember; // Actualiza miembro existente
+        } else {
+            members.push(newMember); // Añade nuevo miembro
+        }
+        renderMembers();
+        memberModal.style.display = 'none'; // Cierra el modal
+    })
+    .catch(error => {
+        alert(error.message);
+    });
 });
 
 // Editar miembro
@@ -88,9 +111,24 @@ function editMember(index) {
 }
 
 // Eliminar miembro
-function deleteMember(index) {
+function deleteMember(userId) {
     if (confirm('¿Estás seguro de que deseas eliminar este miembro?')) {
-        members.splice(index, 1); // Elimina miembro
-        renderMembers(); // Actualiza la tabla
+        fetch(`${API_URL}/${userId}`, {
+            method: 'DELETE',
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error en la eliminación de la API');
+            }
+            // Actualiza la lista de miembros localmente
+            const indexToDelete = members.findIndex(member => member.user_id === userId);
+            if (indexToDelete !== -1) {
+                members.splice(indexToDelete, 1); // Elimina miembro del array
+                renderMembers(); // Actualiza la tabla
+            }
+        })
+        .catch(error => {
+            alert(error.message);
+        });
     }
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Party - Party Finder</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Crear Party</h1>
+        <form id="partyForm">
+            <label for="party_size">Party Size:</label>
+            <select id="party_size" required>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="8">8</option>
+            </select>
+
+            <label for="creator_id">Creator ID:</label>
+            <input type="text" id="creator_id" required>
+
+            <label for="level_cap">Level Cap:</label>
+            <input type="number" id="level_cap" required min="1">
+
+            <label for="ilvl_cap">Item Level Cap:</label>
+            <input type="number" id="ilvl_cap" required min="1">
+
+            <label for="party_role">Party Role:</label>
+            <select id="party_role" required>
+                <option value="TANK">TANK</option>
+                <option value="HEALER">HEALER</option>
+                <option value="DAMAGE">DAMAGE</option>
+                <option value="SUPPORT">SUPPORT</option>
+            </select>
+
+            <label for="planned_start">Planned Start (DD/MM/YYYY_HH:mm):</label>
+            <input type="text" id="planned_start" required>
+
+            <button type="submit">Crear Party</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="partyFinder.js"></script>
+</body>
+</html>
