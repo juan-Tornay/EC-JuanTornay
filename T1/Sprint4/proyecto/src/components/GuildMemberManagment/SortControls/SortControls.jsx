@@ -1,14 +1,20 @@
 import React from 'react';
 
-const SortControls = ({ onSortChange }) => {
+const SortControls = ({ onChange }) => {
   const handleSortChange = (e) => {
-    onSortChange(e.target.value);
+    const { name, value } = e.target;
+    onChange(name, value);
   };
 
   return (
-    <div>
-      <button value="ilvl_asc" onClick={handleSortChange}>Sort by Ilvl Ascending</button>
-      <button value="ilvl_desc" onClick={handleSortChange}>Sort by Ilvl Descending</button>
+    <div className="sort-controls">
+      <select name="sortKey" onChange={handleSortChange}>
+        <option value="ilvl">Item Level</option>
+      </select>
+      <select name="sortOrder" onChange={handleSortChange}>
+        <option value="asc">Ascendente</option>
+        <option value="desc">Descendente</option>
+      </select>
     </div>
   );
 };
