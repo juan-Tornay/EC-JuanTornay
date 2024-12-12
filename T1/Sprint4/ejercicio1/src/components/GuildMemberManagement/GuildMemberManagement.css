@@ -1,0 +1,40 @@
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 20px;
+    border: none;
+}
+
+th {
+    background-color: #4CAF50; /* Nuevo color verde */
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    border-radius: 10px 10px 0 0;
+}
+
+tr {
+    background-color: #e8f5e9; /* Nuevo color que pega con el verde */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+td {
+    font-family: 'Verdana', sans-serif;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+}

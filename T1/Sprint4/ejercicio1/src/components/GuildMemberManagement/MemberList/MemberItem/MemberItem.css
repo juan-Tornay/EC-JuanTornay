@@ -1,0 +1,51 @@
+/* MemberItem.css */
+
+/* Estilo base para los botones */
+button {
+  padding: 10px 15px;
+  margin: 1px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Estilo para el botón Guardar */
+.Guardar {
+  background-color: #43a047; /* Nuevo verde */
+  color: white;
+}
+
+.Guardar:hover {
+  background-color: #388e3c;
+}
+
+/* Estilo para el botón Cancelar */
+.Cancelar {
+  background-color: #e53935; /* Nuevo rojo */
+  color: white;
+}
+
+.Cancelar:hover {
+  background-color: #d32f2f;
+}
+
+/* Estilo para el botón Editar */
+.Editar {
+  background-color: #fdd835; /* Nuevo amarillo */
+  color: black;
+}
+
+.Editar:hover {
+  background-color: #fbc02d;
+}
+
+/* Estilo para el botón Eliminar */
+.Eliminar {
+  background-color: #e53935; /* Nuevo rojo */
+  color: white;
+}
+
+.Eliminar:hover {
+  background-color: #d32f2f;
+}
