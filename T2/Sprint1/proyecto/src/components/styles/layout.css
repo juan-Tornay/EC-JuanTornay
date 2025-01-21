@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  background-color: #333;
+ padding : 2rem 1rem;
+
+
+}
+
+.navbar a {
+  background-color: #333;
+  text-decoration: none;
+}
+
+.hero-section {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
