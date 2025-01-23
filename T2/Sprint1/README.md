@@ -50,7 +50,7 @@ Desarrollar una Pantalla de Inicio funcional, adaptable y estéticamente atracti
 3. Verificar que el usuario es redirigido al panel principal.
 4. Confirmar notificación de éxito.
 5. **Crear un GIF** mostrando que la función se realiza de forma correcta.
- ![Test 2GIF](/Sprint1/resources/IniciarSesion.gif)
+ ![Test 2GIF](./resources/IniciarSesion.gif)
 
 ### ❌ Prueba 2: Error en Inicio de Sesión
 
@@ -58,7 +58,7 @@ Desarrollar una Pantalla de Inicio funcional, adaptable y estéticamente atracti
 2. Verificar que aparece una notificación de error.
 3. **Crear un GIF** mostrando que la función se realiza de forma correcta.
 
- ![Test 2GIF](/Sprint1/resources/Registrar.gif)
+ ![Test 2GIF](./resources/Registrar.gif)
 
 ### 🆕 Prueba 3: Registro con Validaciones
 
@@ -67,7 +67,7 @@ Desarrollar una Pantalla de Inicio funcional, adaptable y estéticamente atracti
 3. Corregir los datos y completar el registro.
 4. Verificar notificación de éxito y redirección al login.
 5. **Crear un GIF** mostrando que la función se realiza de forma correcta.
- ![Test 2GIF](/Sprint1/resources/RegisterError.gif)
+ ![Test 2GIF](./resources/RegisterError.gif)
 
 ### 🔐 Prueba 4: Recuperación de Contraseña
 
@@ -75,10 +75,10 @@ Desarrollar una Pantalla de Inicio funcional, adaptable y estéticamente atracti
 2. Verificar que se envía un aviso de correo de recuperación enviado.
 3. Probar con un correo no registrado y verificar el mensaje de error.
 4. **Crear un GIF** mostrando que la función se realiza de forma correcta.
- ![Test 2GIF](/Sprint1/resources/Olvidada.gif)
+ ![Test 2GIF](./resources/Olvidada.gif)
 
-![Diagrama](/Sprint1/resources/diagrama.png)
-![login/Register](/Sprint1/resources/prueba1.png)
+![Diagrama](./resources/diagrama.png)
+![login/Register](./resources/prueba1.png)
 
-![ContraseñaOlvidada](/Sprint1/resources/prueba2.png)
+![ContraseñaOlvidada](./resources/prueba2.png)
 
