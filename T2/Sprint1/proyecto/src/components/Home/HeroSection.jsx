@@ -1,28 +1,23 @@
 import React from 'react';
-import '../styles/layout.css';
-
-
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <h1>My Sales Site</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#cart">Cart</a></li>
-      </ul>
-    </nav>
-  );
-};
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import '../styles/home.css';
 
 const HeroSection = () => {
   return (
     <section className="hero-section">
-      <h1>Welcome to Our Sales Site</h1>
-      <p>Find the best products at the best prices!</p>
+      <Carousel autoPlay infiniteLoop showThumbs={false}>
+        <div key="1">
+          <img className="carousel-image" src="/assets/images/OmarCourts.png" alt="OmarCourts" />
+        </div>
+        <div key="2">
+          <img className="carousel-image" src="/assets/images/Occo1.png" alt="Occo1" />
+        </div>
+        
+       
+      </Carousel>
     </section>
   );
 };
 
-export default Navbar;
-export { HeroSection };
+export default HeroSection;

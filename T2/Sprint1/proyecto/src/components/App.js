@@ -3,21 +3,43 @@ import Navbar from './Layout/Navbar';
 import HeroSection from './Home/HeroSection';
 import ContentList from './Home/ContentList';
 import Footer from './Layout/Footer';
+import './styles/layout.css';
+import RegisterForm from './Auth/RegisterForm';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LoginForm from './Auth/LoginForm';
+import ForgotPasswordForm from './Auth/ForgotPasswordForm';
 
-const products = [
-  { id: 1, name: 'Product 1', price: '$10', image: 'path/to/image1.jpg' },
-  { id: 2, name: 'Product 2', price: '$20', image: 'path/to/image2.jpg' },
-  // Add more products as needed
-];
-<h1> caca</h1>
+const products = []; // Definir el array products
+
 const App = () => {
   return (
-    <div>
-      <Navbar/>
-      <HeroSection/>
-      <ContentList products={products}/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className="app-container">
+        <Navbar />
+            <div className="content-container">
+         
+         
+        </div>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection />
+                <ContentList />
+              </>
+            }
+          />
+          <Route path="/registrar" element={<RegisterForm />} />
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/forgot-password" element={<ForgotPasswordForm />} />
+        
+        
+        </Routes>
+    
+        <Footer />
+      </div>
+    </Router>
   );
 };
 
