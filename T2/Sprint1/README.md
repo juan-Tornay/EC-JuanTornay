@@ -42,7 +42,7 @@ Desarrollar una Pantalla de Inicio funcional, adaptable y estéticamente atracti
 
 1. Navegar a la pantalla de Home.
 2. Comprobar que aparecen los elementos mínimos y específicos definidos anteriormente con el detalle descrito en los diferentes enumerados.
- ![Home](./resources/home.gif)
+
 ### ✅ Prueba 1: Inicio de Sesión Correcto
 
 1. Ingresar un correo y contraseña válidos.
@@ -51,7 +51,7 @@ Desarrollar una Pantalla de Inicio funcional, adaptable y estéticamente atracti
 4. Confirmar notificación de éxito.
 5. **Crear un GIF** mostrando que la función se realiza de forma correcta.
  ![Test 2GIF](./resources/IniciarSesion.gif)
-
+ ![Home](./resources/home.gif)
 ### ❌ Prueba 2: Error en Inicio de Sesión
 
 1. Ingresar credenciales incorrectas.
