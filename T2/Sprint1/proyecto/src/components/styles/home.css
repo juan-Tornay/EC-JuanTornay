@@ -1,11 +1,12 @@
 .hero-section {
   background-color: #1a1a1a;
   color: white;
-  padding: 2rem;
+  padding: 0.5rem; /* Reduce padding further */
   text-align: center;
-  margin-top: 4rem; /* Ajusta este valor según la altura del navbar */
+  margin-top: 1rem; /* Reduce margin-top further */
   position: relative;
   overflow: hidden; /* Asegura que el contenido no se desborde */
+  height: 700px; /* Set a fixed height */
 }
 
 .hero-section img {
@@ -15,6 +16,7 @@
   margin: 0; /* Elimina márgenes si los hay */
   padding: 0; /* Elimina padding si lo hay */
   object-fit: cover; /* Ajusta la imagen para que cubra bien su contenedor */
+  width: auto;
 }   
 
 .carousel-image {

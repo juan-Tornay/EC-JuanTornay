@@ -13,7 +13,9 @@ const HeroSection = () => {
         <div key="2">
           <img className="carousel-image" src="/assets/images/Occo1.png" alt="Occo1" />
         </div>
-        
+        <div key="3">
+          <img className="carousel-image" src="/assets/images/Aanthique.png" alt="Aanthique" />
+        </div>
        
       </Carousel>
     </section>
