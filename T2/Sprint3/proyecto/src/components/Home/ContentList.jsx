@@ -65,7 +65,13 @@ const ContentList = ({ addToCart }) => {
 
   const handleAddToCart = (product, event) => {
     event.stopPropagation(); // Prevent triggering the card flip
-    addToCart(product);
+    const entradaGeneral = {
+      id: product.id || 'default-id',
+      title: `Entrada General + Consumición - ${product.title || ' 🥳 🥳 🥳'}`,
+      price: '20€',
+      image: product.image || '/assets/images/default.png'
+    };
+    addToCart(entradaGeneral);
     navigate('/carrito');
   };
 

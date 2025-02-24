@@ -2,6 +2,17 @@ import React from 'react';
 import '../styles/cart.css';
 
 const Cart = ({ cartItems }) => {
+  const handlePurchase = () => {
+    if (cartItems.length === 0) {
+      alert('No hay artículos en el carrito.');
+      return;
+    }
+    // Logic to process the purchase
+    alert('Compra realizada con éxito');
+    // Clear the cart after purchase
+    window.location.href = '/';
+  };
+
   return (
     <div className="cart-container">
       <h2>Carrito de Compras</h2>
@@ -20,7 +31,9 @@ const Cart = ({ cartItems }) => {
           ))}
         </ul>
       )}
-      <button className="confirm-purchase-button">Confirmar Compra</button>
+      <button className="confirm-purchase-button" onClick={handlePurchase} disabled={cartItems.length === 0}>
+        Confirmar Compra
+      </button>
     </div>
   );
 };
