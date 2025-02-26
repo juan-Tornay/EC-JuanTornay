@@ -13,9 +13,9 @@ La prueba 3 consiste en un apartado de atencion al cliente el cual pones tu corr
 -Si eres menor no podras acceder al contenido
 -Al ser menor no podras acceder al contenido y mandara de nuevo al verificador de edad
 
--[Prueba 1](./resources/Si.gif)
-[Prueba 1](./resources/No.gif)
-[Prueba 1](./resources/Volver.gif)
+-[Prueba 1.1](./resources/Si.gif)
+[Prueba 1.2](./resources/No.gif)
+[Prueba 1.3](./resources/Volver.gif)
 
 
 
@@ -24,9 +24,9 @@ La prueba 3 consiste en un apartado de atencion al cliente el cual pones tu corr
 Si seleccionamos el carrito y no tenemos ningun producto seleccionado no nos dejara entrar en el carrito
 Si seleccionamos un producto podemos añadirlo al carrito ,  y nos manda directamente a la pestaña del carrito
 Al tener un objeto en el carrito le podemos dar a confirmar la compra y se realiza la compra.
-[Prueba 1](./resources/CarritoVacio.gif)
-[Prueba 1](./resources/AñadirCarrito.gif)
-[Prueba 1](./resources/Confirmar.gif)
+[Prueba 2.1](./resources/CarritoVacio.gif)
+[Prueba 2.2](./resources/AñadirCarrito.gif)
+[Prueba 2.3](./resources/Confirmar.gif)
   
 
 
@@ -36,9 +36,9 @@ Al tener un objeto en el carrito le podemos dar a confirmar la compra y se reali
 -Mandamos el correo, y  salta una alerta de que el mensaje se ha enviado con exito 
 -Confirmamos en gmail de que me ha llegado el correo a mi cuenta personal
 
-[Prueba 1](./resources/Error.gif)
-[Prueba 1](./resources/Correo.gif)
-[Prueba 1](./resources/CorreoConfirmado.gif)
+[Prueba 3.1](./resources/Error.gif)
+[Prueba 3.2](./resources/Correo.gif)
+[Prueba 3.3](./resources/CorreoConfirmado.gif)
 
 
 
