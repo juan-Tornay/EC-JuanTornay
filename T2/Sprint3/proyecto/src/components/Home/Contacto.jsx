@@ -17,14 +17,15 @@ const Contacto = () => {
       message: message,
     };
 
-    emailjs.send('juantyiglesias@gmail.com', '_ejs-test-mail-service_', templateParams, 'd95ra4_hPQjd4LtDb')
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        alert('Mensaje enviado con éxito');
-      }, (error) => {
-        console.log('FAILED...', error);
-        alert('Error al enviar el mensaje');
-      });
+    emailjs.send('service_hms15qd', 'template_y7njn4q', templateParams, 'd95ra4_hPQjd4LtDb')
+  .then((response) => {
+    console.log('SUCCESS!', response.status, response.text);
+    alert('Mensaje enviado con éxito');
+  }, (error) => {
+    console.log('FAILED...', error);
+    alert('Error al enviar el mensaje');
+  });
+
   };
 
   const handleSobreNosotrosClick = () => {
